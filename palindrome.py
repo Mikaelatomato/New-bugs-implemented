@@ -6,3 +6,4 @@ def palindrome():
     else:
         return print("the given word isn't a palindrome")
 palindrome()
+
