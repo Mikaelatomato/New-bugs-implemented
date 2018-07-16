@@ -50,3 +50,15 @@ while True:
     else:
         print("thanks for playing :)")
         break
+
+#player1 =
+#1 - 2 = -1 loses
+#1 - 3 = -2 wins
+#1 - 1 = draw
+#2 - 1 = 1 wins
+#2 - 2 = draw
+#2 - 3 = -1 loses
+#3 - 2 = 1 wins
+#3 - 1 = 2 loses
+#3 - 3 = draw
+#so, if dif is 1 or -2, p1 wins, and if dif is -1 or 2, p2 wins
