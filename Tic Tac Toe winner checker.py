@@ -9,7 +9,7 @@ def whoiswinner():
     winner = int
     while winner != 0:
         for i in range(len(new_game)):
-            if new_game[0][i] == new_game[1][i] == new_game[2][i] and new_game[i] != 0 and new_game[i][i] != 0: #vertical check
+            if new_game[0][i] == new_game[1][i] == new_game[2][i] and new_game[i][i] != 0: #vertical check
                 if new_game[i][i] == 1:
                     winner = 1
                 else:
