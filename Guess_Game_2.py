@@ -23,13 +23,13 @@ def guessing():
         if userchoice == "1":
             return print("\n\nI knew it and it only took me",count,"attempt(s), but isn't like a know you or a-a-anything...")
         if userchoice != "1" and userchoice != "2" and userchoice != "3":
-            print ("\ni don't like your jokes anon!!!")
+            print ("\ni don't like your jokes anon!!")
             break
         if dif == 1:
-            print ("\n it must be fucking",botpick,"stop playing with me!!!")
+            print ("\n it must be fucking",botpick,"stop playing with me!!")
             break
         if start_index == 100 and end_index == 100:
-            print("\n it must be fucking",botpick, "stop playing with me!!!")
+            print("\n it must be fucking",botpick, "stop playing with me!!")
             break
 
 guessing()
