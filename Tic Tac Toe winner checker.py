@@ -9,6 +9,21 @@ def main():
                 [0, 0, 0],
                 [0, 0, 0]]
 
+    def drawboard(board):
+        print('---------------')
+        print('|    |   |    |')
+        print('| ' + str(board[0][0]) + '  | ' + str(board[0][1]) + ' |  ' + str(board[0][2]) + ' |')
+        print('|    |   |    |')
+        print('---------------')
+        print('|    |   |    |')
+        print('| ' + str(board[1][0]) + '  | ' + str(board[1][1]) + ' |  ' + str(board[1][2]) + ' |')  # a better ver of Sreekaanth91 but the credit is for him
+        print('|    |   |    |')
+        print('---------------')
+        print('|    |   |    |')
+        print('| ' + str(board[2][0]) + '  | ' + str(board[2][1]) + ' |  ' + str(board[2][2]) + ' |')
+        print('|    |   |    |')
+        print('---------------')
+
     def whoiswinner():
             for i in range(len(new_game)):
                 if new_game[0][i] == new_game[1][i] == new_game[2][i] and new_game[i][i] != 0: #vertical check
@@ -45,7 +60,7 @@ def main():
                 if new_game[row][col] == 0:
                     new_game[row][col] = 1
                     playerturn1 = 1
-                    print(new_game)
+                    drawboard(new_game)
                     winner1 = whoiswinner()
                 else:
                     print("This place is already taken")
@@ -58,7 +73,7 @@ def main():
                 if new_game[row][col] == 0:
                     new_game[row][col] = 2
                     playerturn2 = 1
-                    print(new_game)
+                    drawboard(new_game)
                     winner1 = whoiswinner()
                 else:
                     print ("This place is already taken")
