@@ -123,7 +123,7 @@ def main():
         elif winner1 == 3:
             drawcount += 1
         print("Player1 has won: ", player1count,
-                "times,\nPlayer2 has won: ", player2count,
+                "times,\nPlayer2 has won: ", player2count, # this is the undone part, can't get this to don't reset when a newgame starts
                 "times,\nAnd you have a total of: ", drawcount, "draws")
         while True:
             answer = input('Play Again? (y/n): ')
