@@ -15,7 +15,7 @@ def main():
                     if new_game[i][i] == 1:
                         return 1
                     else:
-                        return 2 #i might put the winner = 0 after this and change the while to a while winner == 0, so this won't stop checking till there's a winner.
+                        return 2
                 if new_game[i][0] == new_game[i][1] == new_game[i][2] and new_game[i][i] != 0: # horizontal check
                     if new_game[i][i] == 1:
                         return 1
@@ -38,7 +38,7 @@ def main():
             playerturn1 = 0
             playerturn2 = 0
             while playerturn1 == 0 and winner1 == None:
-                player1_move =input("\nWrite the coordenates for 'X': ")
+                player1_move =input("\nWrite the coordinates for 'X': ")
                 player1coordinates = player1_move.strip().split(",")
                 row = int(player1coordinates[0]) - 1
                 col = int(player1coordinates[1]) - 1
@@ -51,7 +51,7 @@ def main():
                     print("This place is already taken")
                     continue
             while playerturn2 == 0 and winner1 == None:
-                player2_move = input("\nWrite the coordenates for 'O': ")
+                player2_move = input("\nWrite the coordinates for 'O': ")
                 player2coordinates = player2_move.strip().split(",")
                 row = int(player2coordinates[0]) - 1
                 col = int(player2coordinates[1]) - 1
