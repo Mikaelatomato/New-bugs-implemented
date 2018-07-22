@@ -70,6 +70,8 @@ def main():
                             break
                         except ValueError:
                             print ("Invalid coordinates, the must be typed as: row,col\nfor example: 1,3")
+                        except IndexError:
+                            print ("Invalid coordinates, the must be typed as: row,col\nfor example: 1,3")
                     if x > 3 or x <= 0 or y > 3 or y <= 0:
                         print ("Coordinates out of range, the range must be from 1 to 3")
                         continue
@@ -93,6 +95,8 @@ def main():
                             col = int(player2coordinates[1]) - 1
                             break
                         except ValueError:
+                            print ("Invalid coordinates, the must be typed as: row,col\nfor example: 1,3")
+                        except IndexError:
                             print ("Invalid coordinates, the must be typed as: row,col\nfor example: 1,3")
                     if x > 3 or x <= 0 or y > 3 or y <= 0:
                         print ("Coordinates out of range, the range must be from 1 to 3")
