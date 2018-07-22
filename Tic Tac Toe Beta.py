@@ -1,11 +1,13 @@
+player1count = 0
+player2count = 0
+drawcount = 0
 def main():
     print ("Welcome, morons and bakas, to The Tic Tac Toe Game\n\nThe first player to get 3 consecutive 'x'(in player 1 case) or 'o'(in player 2 case) wins\nTo selec a block, write the cords like this: row,colum \nfor example: 1,3 , that's all, gl bakas\n")
-
     def newgame():
         board_size = 3
         for i in range(board_size):
             print(" ---- " * (board_size))
-            print("| XO |" * (board_size))
+            print("| xo |" * (board_size))
             print(" ---- " * board_size)
         new_game = [['-', '-', '-'],
                     ['-', '-', '-'],
@@ -67,7 +69,7 @@ def main():
                             col = int(player1coordinates[1]) - 1
                             break
                         except ValueError:
-                            print ("Invalid coordinates, the must be typed as: row,col\n for example: 1,3")
+                            print ("Invalid coordinates, the must be typed as: row,col\nfor example: 1,3")
                     if x > 3 or x <= 0 or y > 3 or y <= 0:
                         print ("Coordinates out of range, the range must be from 1 to 3")
                         continue
@@ -105,38 +107,41 @@ def main():
                         print ("This place is already taken")
                         continue
             if winner1 == 1:
-                print ("Player 1 wins!!!")
+                print ("Player 1 wins!!!\n")
                 return (winner1)
             elif winner1 == 2:
-                print ("Player 2 wins!!!")
+                print ("Player 2 wins!!!\n")
                 return (winner1)
-        playing(whoiswinner())
 
-    def play(winner1):
-        player1count = 0
-        player2count = 0
-        drawcount = 0
-        if winner1 == 1:
-            player1count += 1
-        elif winner1 == 2:
-            player2count += 1
-        elif winner1 == 3:
-            drawcount += 1
+        def play(winner1):
+            if winner1 == 1:
+               global player1count
+               player1count += 1
+            elif winner1 == 2:
+                global player2count
+                player2count += 1
+            elif winner1 == 3:
+                global drawcount
+                drawcount += 1
+        play(playing(whoiswinner()))
+
         print("Player1 has won: ", player1count,
-                "times,\nPlayer2 has won: ", player2count, # this is the undone part, can't get this to don't reset when a newgame starts
-                "times,\nAnd you have a total of: ", drawcount, "draws")
+              "times,\nPlayer2 has won: ", player2count,
+              "times,\nAnd you have a total of: ", drawcount, "draws")
         while True:
-            answer = input('Play Again? (y/n): ')
+            answer = input('\nPlay Again? (y/n): ')
             if answer != 'y' and answer != 'n':
                 print ("invalid input")
                 continue
             if answer == 'n':
-                print ("Thanks for playing baka!")
+                print ("\nThanks for playing baka!")
                 break
             if answer == 'y':
                 newgame()
-        play(playing(whoiswinner()))
     newgame()
 
 if __name__ == "__main__":
+    player1count = 0
+    player2count = 0
+    drawcount = 0
     main()
