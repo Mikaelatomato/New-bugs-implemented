@@ -78,7 +78,7 @@ def main():
                         playerturn1 = 1
                         drawboard(new_game)
                         winner1 = whoiswinner()
-                     else:
+                    else:
                         print ("This place is already taken")
                         continue
                 while playerturn2 == 0 and winner1 == None and count < 9:
