@@ -78,8 +78,8 @@ def main():
                         playerturn1 = 1
                         drawboard(new_game)
                         winner1 = whoiswinner()
-                    elif new_game[row][col] == 1 or new_game[row][col] == 2:
-                        print("This place is already taken")
+                     else:
+                        print ("This place is already taken")
                         continue
                 while playerturn2 == 0 and winner1 == None and count < 9:
                     while True:
