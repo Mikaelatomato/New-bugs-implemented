@@ -1,6 +1,3 @@
-player1count = 0
-player2count = 0
-drawcount = 0
 def main():
     print ("Welcome, morons and bakas, to The Tic Tac Toe Game\n\nThe first player to get 3 consecutive 'x'(in player 1 case) or 'o'(in player 2 case) wins\nTo selec a block, write the cords like this: row,colum \nfor example: 1,3 , that's all, gl bakas\n")
     def newgame():
@@ -139,7 +136,7 @@ def main():
                 continue
             if answer == 'n':
                 print ("\nThanks for playing baka!")
-                break
+                exit()
             if answer == 'y':
                 newgame()
     newgame()
