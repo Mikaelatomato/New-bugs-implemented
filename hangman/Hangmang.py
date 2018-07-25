@@ -17,8 +17,8 @@ def main():
         else:
             print("  |                  You have",  triesleft, "tries left")
         if count2 == 6:
-            print("  |    /|\            You have",  triesleft, "tries left") # Credits to khdc-me (https://github.com/khdc-me)
-        elif count2 == 5:                       # i'm too lazy and it would be the same at the end.
+            print("  |    /|\            You have",  triesleft, "tries left") # Credits to khdc-me for this func (https://github.com/khdc-me)
+        elif count2 == 5:                                       # i'm too lazy and it would be the same at the end.
             print("  |    /|              You have",  triesleft, "tries left")
         elif count2 >= 2:
             print("  |     |               You have",  triesleft, "tries left")
