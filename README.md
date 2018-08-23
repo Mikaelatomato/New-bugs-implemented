@@ -1,6 +1,8 @@
 # New-bugs-implemented
 Here i'll upload all my work while learning python.
 
+and before the next so; so, i know that some files aren't working properly, and i don't think to fix them, sorry.
+
 so, i may stop working on python for a while since i'm learning java now because of my university. I'll be uploading my work of java on a different repository if you want to check it out too and give me some comments about what could be better :)
 
 that's all
